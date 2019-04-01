@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+}
+
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <script>
+        function redireccionarPedido()
+        {
+            document.location.href = "/Medicamentos/PedidoDeMedicamento"
+        }
+        function redireccionrReabastecer()
+        {
+            document.location.href = "/Medicamentos/ReabastecerInventario"
+        }
+      
+        function redireccionrSerializador() {
+            document.location.href = "/Medicamentos/Serializar"
+        }
+
+
+
+    </script>
+    <style>
+        body {
+            background-color: gray;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+
+        #MenuCentral {
+            background-color: #B0BEC5;
+            color: black;
+            width: 25%;
+            height: 50%;
+            position: fixed;
+            top: 30%;
+            left: 55%;
+            border-radius: 6px;
+            border: 2px solid black;
+            -webkit-filter: saturate(3ox);
+        }
+
+        #Footer {
+            background-color: #CFD8DC;
+            color: black;
+            width: 100%;
+            height: 7%;
+            position: fixed;
+            top: 93%;
+            left: 0%;
+            border-radius: 10px 10px 0px 0px;
+            border: 2px solid #424242;
+        }
+
+        .bt {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000000;
+            background-color: white;
+            border-width: 3px;
+            border-style: solid;
+            border-color: #000000;
+            width: 65%;
+            height: 10%;
+            text-align: center;
+        }
+
+            .bt:hover {
+                transition-duration: 0.5s;
+                color: #FFFFFF;
+                background-color: gray;
+                font-weight: 400;
+                font-size: 14px;
+                color: #000000;
+                border-width: 3px;
+                border-style: solid;
+                border-color: #000000;
+                border-radius: 6px;
+                width: 65%;
+                height: 10%;
+                text-align: center;
+            }
+    </style>
+
+    <div id="MenuCentral">
+        <br />
+
+        <center><input type="button" value="Pedido de Medicamentos" class="bt" onclick="redireccionarPedido()" /></center> <br /><br />
+        <center><input type="button" value="Consultar Inventario" class="bt" onclick="redireccionrSerializador()" /></center> <br /><br />
+        <center><input type="button" value="Reabastecer Inventario" class="bt" onclick="redireccionrReabastecer()" /></center> <br /><br />
+     
+    </div>
+    <div id="Footer"><center>Laboratorio 7 Arboles B, sistema de compras. Propiedad de: Marcelo Rosales  - Ronald Ovalle</center></div>
+</body>
+</html>
+
+

@@ -1,0 +1,20 @@
+﻿@model Laboratorio_7_ArbolesB_MarceloRosales.Models.Compras
+@{
+    ViewBag.Title = "MercanciaComprada";
+}
+<script>
+    function RedireccionarMenu()
+    {
+        document.location.href = "/Medicamentos/Menu";
+    }
+</script>
+<h2>Su compra fue: </h2>
+<h2>Nombre del cliente: @Model.Nombre Nit: @Model.NIT</h2>
+<h2>Nombre del Farmaco: @Model.Farmaco</h2>
+<h2>Cantidad del Farmaco: @Model.Cantidad</h2>
+<h2>Total del Farmaco: @Model.Total</h2>
+<input type="button" value="menu" onclick="RedireccionarMenu()" />
+
+
+
+
